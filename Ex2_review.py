@@ -261,10 +261,6 @@ while usr_input != correct_password:
 print ("Access granted! ")
 
 
-
-
-
-
 # -------------------------------------------
 # ADVANCED ACTIVITY
 # -------------------------------------------
@@ -290,6 +286,25 @@ print("-------------------------------------------\n"
 # 1 2 3 4 5 6 7 8 9 10
 #
 # Write your code below:
+choice = ""
+while choice != 3:
+    print ("\nMenu: ")
+    print ("1. Count to 10 ")
+    print ("2. Show even numbers between 1-20 ")
+    print ("3. Exit ")
+    choice = input ("Enter your choice (1-3): ")
+    if choice == "1":
+        print ("Counting to 10: ")
+        for i in range (1, 11):
+            print (i)
+    elif choice == "2":
+        print("Even numbers between 1 and 20:")
+        for i in range(2, 21, 2):
+            print(i)
+    elif choice == "3":
+        print("All Done!")
+    else:
+        print("Invalid choice. Please enter 1, 2, or 3.")
 
 
 
