@@ -185,6 +185,15 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 secret_num = 9
+guess_num = int(input("Guess the number between 1 and 10: "))
+while guess_num != secret_num:
+    if guess_num < secret_num:
+        print ("Too Low! ")
+    else:
+        print ("Too High! ")
+    guess_num = int(input("Try Again: "))
+print ("Correct! Well done. ")
+
 
 # -------------------------------------------
 # Submitting Your Work
