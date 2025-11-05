@@ -26,6 +26,11 @@ print("-------------------------------------------\n"
 # Output: 7 is odd
 #
 # Write your code below:
+user_num = int(input("Enter a number: "))
+if user_num % 2 == 0:
+    print (f"{user_num} is even")
+else:
+    print (f"{user_num} is odd")
 
 
 # -------------------------------------------
@@ -58,6 +63,13 @@ print("-------------------------------------------\n"
 # Output: Excellent!
 #
 # Write your code below:
+user_score = int(input("Enter your score: "))
+if user_score >= 70:
+    print ("Excellent! ")
+elif user_score >= 50 and user_score <= 69:
+    print ("Good effort! ")
+else:
+    print ("Needs improvement! ")
 
 
 # -------------------------------------------
@@ -95,6 +107,11 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
+start_num = int(input("Enter a starting number: "))
+while start_num > 0:
+    print (start_num)
+    start_num -= 1
+print ("Blast off! ")
 
 
 # -------------------------------------------
@@ -129,7 +146,9 @@ print("-------------------------------------------\n"
 # 3 x 10 = 30
 #
 # Write your code below:
-
+num = int(input("Enter a number: "))
+for i in range (1, 11):
+    print (f"{num} x {i} = {num * i}")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -165,6 +184,15 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
+secret_num = 9
+guess_num = int(input("Guess the number between 1 and 10: "))
+while guess_num != secret_num:
+    if guess_num < secret_num:
+        print ("Too Low! ")
+    else:
+        print ("Too High! ")
+    guess_num = int(input("Try Again: "))
+print ("Correct! Well done. ")
 
 
 # -------------------------------------------
@@ -201,8 +229,11 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
-
-
+total = 0
+for i in range(5):
+    num = int(input ("Enter number: "))
+    total = total + num
+print (f"The total is {total}")
 
 
 # Extension 2:
@@ -222,8 +253,12 @@ print("-------------------------------------------\n"
 # Output: Access granted!
 #
 # Write your code below:
-
-
+correct_password = "python123!"
+usr_input = input ("Enter password: ")
+while usr_input != correct_password:
+    print ("Incorrect password, Try Again! ")
+    usr_input = input("Enter password: ")
+print ("Access granted! ")
 
 
 # -------------------------------------------
@@ -251,6 +286,25 @@ print("-------------------------------------------\n"
 # 1 2 3 4 5 6 7 8 9 10
 #
 # Write your code below:
+choice = ""
+while choice != 3:
+    print ("\nMenu: ")
+    print ("1. Count to 10 ")
+    print ("2. Show even numbers between 1-20 ")
+    print ("3. Exit ")
+    choice = input ("Enter your choice (1-3): ")
+    if choice == "1":
+        print ("Counting to 10: ")
+        for i in range (1, 11):
+            print (i)
+    elif choice == "2":
+        print("Even numbers between 1 and 20:")
+        for i in range(2, 21, 2):
+            print(i)
+    elif choice == "3":
+        print("All Done!")
+    else:
+        print("Invalid choice. Please enter 1, 2, or 3.")
 
 
 
