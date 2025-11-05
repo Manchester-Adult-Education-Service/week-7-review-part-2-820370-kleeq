@@ -146,7 +146,9 @@ print("-------------------------------------------\n"
 # 3 x 10 = 30
 #
 # Write your code below:
-
+num = int(input("Enter a number: "))
+for i in range (1, 10):
+    print (f"{num} x {i} = {num * i}")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -182,7 +184,7 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
-
+secret_num = 9
 
 # -------------------------------------------
 # Submitting Your Work
