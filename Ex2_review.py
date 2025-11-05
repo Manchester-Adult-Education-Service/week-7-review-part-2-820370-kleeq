@@ -107,6 +107,11 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
+start_num = int(input("Enter a starting number: "))
+while start_num > 0:
+    print (start_num)
+    start_num -= 1
+print ("Blast off! ")
 
 
 # -------------------------------------------
