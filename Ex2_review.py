@@ -229,8 +229,11 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
-
-
+total = 0
+for i in range(5):
+    num = int(input ("Enter number: "))
+    total = total + num
+print (f"The total is {total}")
 
 
 # Extension 2:
@@ -250,6 +253,14 @@ print("-------------------------------------------\n"
 # Output: Access granted!
 #
 # Write your code below:
+correct_password = "python123!"
+usr_input = input ("Enter password: ")
+while usr_input != correct_password:
+    print ("Incorrect password, Try Again! ")
+    usr_input = input("Enter password: ")
+print ("Access granted! ")
+
+
 
 
 
